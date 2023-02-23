@@ -53,7 +53,7 @@
  ```
  - Run the script 
  ```
- ./scripts/mdns_bash_service/mDnsScript.sh
+ /scripts/mdns_bash_service/mDnsScript.sh
  ```
  
  ## Test
