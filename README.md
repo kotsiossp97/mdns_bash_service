@@ -4,6 +4,12 @@
 # Installation
  The script can be executed directly, or it can be added as a system service 
  and ran automatically in the background.
+ ## Prerequisites
+ - You need `avahi-publish` installed on your system.
+ ```
+ sudo apt install avahi-utils
+ ```
+ 
  ## Download Script
  - Login as root
  ```
@@ -18,7 +24,7 @@
  git clone https://github.com/kotsiossp97/mdns_bash_service.git /scripts/mdns_bash_service
  ```
  ## Service Installation
- - Edit the domains.conf file as your preference
+ - Edit the `domains.conf` file as your preference
  ```
  vi /scripts/mdns_bash_service/domains.conf
  ```
@@ -37,23 +43,22 @@
  systemctl restart mDnsScript.service
  ```
  ## Run Directly
- - Edit the domains.conf file as your preference
+ - Edit the `domains.conf` file as your preference
  ```
  vi /scripts/mdns_bash_service/domains.conf
  ```
  - Give execution permissions to script
  ```
- cd /scripts/mdns_bash_service
- chmod +x mDnsScript.sh
+ chmod +x /scripts/mdns_bash_service/mDnsScript.sh
  ```
  - Run the script 
  ```
- ./mdns_bash_service.sh
+ ./scripts/mdns_bash_service/mDnsScript.sh
  ```
  
  ## Test
  - Open any command line on any device on your local network and ping the domain name:
- e.g domain name 'kotsios-mainpc.local' points to IP address 192.168.178.36
+ e.g domain name `kotsios-mainpc.local` points to IP address `192.168.178.36`
  ```
  ping kotsios-mainpc.local
  ```
