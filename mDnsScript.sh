@@ -67,3 +67,6 @@ do
         $AVAHI_CMD -a $HOST $IP -R &
 
 done < $DOMAINS_FILE
+
+echo "Done adding hosts, sleeping..."
+sleep infinity
