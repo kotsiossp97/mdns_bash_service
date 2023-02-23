@@ -1,4 +1,4 @@
-# mDNS Bash Script
+# mDNS Bash Service
  Script that publishes hostsnames pointing to IP in LAN.
 
 # Installation

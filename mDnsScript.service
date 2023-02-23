@@ -1,0 +1,8 @@
+[Unit]
+Description=mDNS Service
+
+[Service]
+ExecStart=/scripts/mdns_bash_service/mDnsScript.sh
+
+[Install]
+WantedBy=multi-user.target

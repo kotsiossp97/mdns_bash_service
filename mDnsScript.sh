@@ -38,7 +38,7 @@ testAvahiPublish(){
 trap exitFunction SIGINT SIGTERM
 
 #Change the following path to your dir
-SCRIPT_PATH="/scripts"
+SCRIPT_PATH="/scripts/mdns_bash_service"
 
 DOMAINS_FILE=$SCRIPT_PATH"/domains.conf"
 HOST_IP=$(hostname -I | cut -d ' ' -f1)
@@ -65,5 +65,5 @@ do
         echo "Adding <$HOST> to redirect to <$IP>"
 
         $AVAHI_CMD -a $HOST $IP -R &
-        
+
 done < $DOMAINS_FILE
