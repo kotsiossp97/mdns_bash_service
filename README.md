@@ -23,6 +23,11 @@
  ```
  git clone https://github.com/kotsiossp97/mdns_bash_service.git /scripts/mdns_bash_service
  ```
+  - Give execution permissions to script
+ ```
+ chmod +x /scripts/mdns_bash_service/mDnsScript.sh
+ ```
+ 
  ## Service Installation
  - Edit the `domains.conf` file as your preference
  ```
@@ -37,6 +42,10 @@
  systemctl daemon-reload 
  systemctl enable mDnsScript.service
  systemctl start mDnsScript.service
+ ```
+ - Check service status with:
+ ```
+ systemctl status mDnsScript.service
  ```
  - If you make any changes to domains.conf file, restart the service so the changes are applied:
  ```
