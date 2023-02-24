@@ -1,6 +1,9 @@
 # mDNS Bash Service
  Script that publishes hostsnames pointing to IP in LAN.
 
+
+![Repo Size][size-shield] ![Last Commit][lastCommit-shield] ![Downloads][downloads-shield]
+
 # Installation
  The script can be executed directly, or it can be added as a system service 
  and ran automatically in the background.
@@ -19,9 +22,12 @@
  ```
  mkdir -p /scripts/mdns_bash_service
  ```
- - Clone the repo:
+ - Download the repo:
  ```
- git clone https://github.com/kotsiossp97/mdns_bash_service.git /scripts/mdns_bash_service
+ cd /scripts/mdns_bash_service
+ wget https://github.com/kotsiossp97/mdns_bash_service/releases/latest/download/mDnsScript.sh
+ wget https://github.com/kotsiossp97/mdns_bash_service/releases/latest/download/mDnsScript.service
+ wget https://github.com/kotsiossp97/mdns_bash_service/releases/latest/download/domains.conf
  ```
   - Give execution permissions to script
  ```
@@ -78,3 +84,7 @@
  Reply from 192.168.178.36: bytes=32 time<1ms TTL=128
  Reply from 192.168.178.36: bytes=32 time<1ms TTL=128
  ```
+
+[lastCommit-shield]: https://img.shields.io/github/last-commit/kotsiossp97/mdns_bash_service?style=for-the-badge
+[size-shield]: https://img.shields.io/github/languages/code-size/kotsiossp97/mdns_bash_service?style=for-the-badge
+[downloads-shield]: https://img.shields.io/github/downloads/kotsiossp97/mdns_bash_service/total?style=for-the-badge
