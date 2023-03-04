@@ -57,7 +57,7 @@
  ```
  systemctl restart mDnsScript.service
  ```
- ## Run Directly
+ # Run Directly
  - Edit the `domains.conf` file as your preference
  ```
  vi /scripts/mdns_bash_service/domains.conf
@@ -71,7 +71,7 @@
  /scripts/mdns_bash_service/mDnsScript.sh
  ```
  
- ## Test
+ # Test
  - Open any command line on any device on your local network and ping the domain name:
  e.g domain name `kotsios-mainpc.local` points to IP address `192.168.178.36`
  ```
